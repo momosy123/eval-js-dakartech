@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    padding-top: 20px;
+}
+/* le bloc principal centré au milieu */
+.conteneur {
+    max-width: 500px;
+    margin: 0 auto; 
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    /* box-shadow: 0 0 10px gray; (je le cache car ça fait trop chargé) */
+}
+h1 {
+    text-align: center;
+}
+/* le formulaire */
+#formulaire-ajout {
+    display: flex;
+    margin-bottom: 20px;
+}
+#champ-tache {
+    flex: 1;
+    padding: 8px;
+}
+#btn-ajouter {
+    background-color: blue;
+    color: white;
+    border: none;
+    margin-left: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+/* pour les bonus */
+#zone-filtres {
+    text-align: center;
+    margin-bottom: 15px;
+}
+#zone-filtres button {
+    margin: 0 3px;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+#zone-filtres button.actif {
+    background-color: lightblue;
+    font-weight: bold;
+}
+/* la liste */
+ul {
+    padding-left: 0;
+}
+li {
+    list-style: none;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+/* style quand on a fini la tache */
+.terminee {
+    text-decoration: line-through;
+    color: gray;
+    background-color: #eaeaea;
+}
+/* boutons des taches */
+.btn-terminer {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+.btn-supprimer {
+    background-color: red;
+    color: white;
+    border: none;
+    margin-left: 5px;
+    padding: 5px;
+}
+#texte-compteur {
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+} 
