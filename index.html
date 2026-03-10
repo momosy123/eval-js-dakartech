@@ -1,0 +1,37 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List - Évaluation JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="conteneur">
+        <h1>Ma To-Do List</h1>
+
+        <form id="formulaire-ajout">
+            <input type="text" id="champ-tache" placeholder="Qu'avez-vous à faire ?">
+            <button type="submit" id="btn-ajouter">Ajouter</button>
+        </form>
+        
+        <p id="message-erreur" style="color: red; display: none; font-size: 14px;">Veuillez entrer une tâche.</p>
+
+        <div id="zone-filtres">
+            <button id="filtre-toutes" class="actif">Toutes</button>
+            <button id="filtre-encours">En cours</button>
+            <button id="filtre-terminees">Terminées</button>
+        </div>
+
+        <ul id="liste-taches">
+        </ul>
+
+        <p id="texte-compteur">0 tâche(s) en cours</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
